@@ -139,7 +139,21 @@ Framer Motion Controller
 
    
   </div>
+  
 </div>
+<footer className="w-full text-center text-gray-500 text-sm  bg-gray-900">
+      <p>Made by <span className="font-semibold">Sagarika Sahoo</span></p>
+      <a
+        href="https://www.linkedin.com/in/sagarika2412/"
+       target="_blank"
+  rel="noopener noreferrer"
+
+        className="text-blue-500 hover:underline"
+      >
+        Connect on LinkedIn
+      </a>
+    </footer>
+
 
 </>
   );
