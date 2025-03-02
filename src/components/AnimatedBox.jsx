@@ -54,12 +54,12 @@ const MotionController = () => {
 <h1 className="text-3xl font-bold text-center text-white py-4 bg-gray-950">
 Framer Motion Controller
   </h1>
-<div className="flex flex-col md:flex-row h-screen bg-gray-900 text-white p-4 gap-6">
+<div className="flex flex-col md:flex-row h-screen max-h-full bg-gray-900 text-white p-4 gap-6 sm:flex-row sm:w-full">
   {/* Motion Controls */}
-  <div className="w-1/2 flex justify-center">
+  <div className="w-full md:w-1/2 flex flex-col">
     <div className="bg-gray-800 p-4 rounded-lg shadow-md w-full">
       <h2 className="text-xl font-semibold text-center mb-4">Motion Controls</h2>
-      <div className="grid grid-cols-3 gap-4">
+      <div className="grid sm:grid-cols-3 gap-4 grid-cols-2">
         {[
           { label: "Opacity", name: "opacity", min: 0, max: 1, step: 0.1 },
           { label: "Scale", name: "scale", min: 0.5, max: 2, step: 0.1 },
@@ -112,7 +112,7 @@ Framer Motion Controller
   </div>
 
   {/* Motion Box & Generated Code */}
-  <div className="w-2/3 flex flex-col items-center gap-4 justify-around">
+  <div className="w-full flex flex-col items-center gap-4 justify-around md:w-2/3">
     <motion.div
       initial={{ opacity: 1, scale: 1, rotate: 0 }}
       animate={
