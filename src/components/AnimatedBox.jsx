@@ -50,10 +50,11 @@ const MotionController = () => {
   // };
 
   return (
-<>
+<div className="flex flex-col min-h-screen bg-gray-900 text-white p-4 gap-6">
 <h1 className="text-3xl font-bold text-center text-white py-4 bg-gray-950">
 Framer Motion Controller
-  </h1>
+</h1>
+<main className="flex flex-col md:flex-row flex-grow">
 <div className="flex flex-col md:flex-row h-screen max-h-full bg-gray-900 text-white p-4 gap-6 sm:flex-row sm:w-full">
   {/* Motion Controls */}
   <div className="w-full md:w-1/2 flex flex-col">
@@ -141,21 +142,21 @@ Framer Motion Controller
   </div>
   
 </div>
-<footer className="w-full text-center text-gray-500 text-sm  bg-gray-900">
-      <p>Made by <span className="font-semibold">Sagarika Sahoo</span></p>
-      <a
-        href="https://www.linkedin.com/in/sagarika2412/"
-       target="_blank"
-  rel="noopener noreferrer"
+  </main>
+ <footer className="w-full text-center text-gray-500 text-sm bg-gray-900 mt-auto">
+    <p>Made by <span className="font-semibold">Sagarika Sahoo</span></p>
+    <a
+      href="https://www.linkedin.com/in/sagarika2412/"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-500 hover:underline"
+    >
+      Connect on LinkedIn
+    </a>
+  </footer>
 
-        className="text-blue-500 hover:underline"
-      >
-        Connect on LinkedIn
-      </a>
-    </footer>
 
-
-</>
+</div>
   );
 };
 
